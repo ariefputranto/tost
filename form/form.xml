@@ -1,0 +1,169 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Formulir Surat Keterangan Mahasiswa</h:title>
+    <model>
+      <instance>
+        <data id="build_Formulir-Surat-Keterangan-Mahasiswa_1458546410">
+          <meta>
+            <instanceID/>
+          </meta>
+          <nama/>
+          <ttl/>
+          <TanggalLahir/>
+          <nohp/>
+          <alamat/>
+          <namaortu/>
+          <pekerjaanOrtu/>
+          <alamatOrtu/>
+          <nrp/>
+          <masaStudi/>
+          <statusmhs/>
+          <tahap/>
+          <keperluan/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/nama:label">
+            <value>Nama :</value>
+          </text>
+          <text id="/data/nama:hint">
+            <value>Andre</value>
+          </text>
+          <text id="/data/ttl:label">
+            <value>Tempat Lahir :</value>
+          </text>
+          <text id="/data/ttl:hint">
+            <value>Surabaya</value>
+          </text>
+          <text id="/data/TanggalLahir:label">
+            <value>Tanggal Lahir :</value>
+          </text>
+          <text id="/data/nohp:label">
+            <value>No. Hp :</value>
+          </text>
+          <text id="/data/nohp:hint">
+            <value>xxx-xxx-xxx-xxx</value>
+          </text>
+          <text id="/data/alamat:label">
+            <value>Alamat Sekarang :</value>
+          </text>
+          <text id="/data/alamat:hint">
+            <value></value>
+          </text>
+          <text id="/data/namaortu:label">
+            <value>Nama Orang Tua / Wali :</value>
+          </text>
+          <text id="/data/pekerjaanOrtu:label">
+            <value>Pekerjaan Orang Tua / Wali :</value>
+          </text>
+          <text id="/data/alamatOrtu:label">
+            <value>Alamat Orang Tua / Wali :</value>
+          </text>
+          <text id="/data/nrp:label">
+            <value>NRP :</value>
+          </text>
+          <text id="/data/masaStudi:label">
+            <value>Masa Studi :</value>
+          </text>
+          <text id="/data/statusmhs:label">
+            <value>Status Mahasiswa :</value>
+          </text>
+          <text id="/data/statusmhs:option0">
+            <value>Aktif</value>
+          </text>
+          <text id="/data/statusmhs:option1">
+            <value>Cuti</value>
+          </text>
+          <text id="/data/tahap:label">
+            <value>Tahap :</value>
+          </text>
+          <text id="/data/tahap:option0">
+            <value>Persiapan</value>
+          </text>
+          <text id="/data/tahap:option1">
+            <value>Sarjana</value>
+          </text>
+          <text id="/data/keperluan:label">
+            <value>Digunakan untuk :</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/nama" type="string" required="true()" constraint="(regex(., &quot;^.{1,20}$&quot;))" jr:constraintMsg="Response length must be between 1 and 20"/>
+      <bind nodeset="/data/ttl" type="string" required="true()" constraint="(regex(., &quot;^.{5,50}$&quot;))" jr:constraintMsg="Response length must be between 5 and 50"/>
+      <bind nodeset="/data/TanggalLahir" type="date"/>
+      <bind nodeset="/data/nohp" type="string" constraint="(regex(., &quot;^.{9,12}$&quot;))" jr:constraintMsg="Response length must be between 9 and 12"/>
+      <bind nodeset="/data/alamat" type="string" required="true()" constraint="(regex(., &quot;^.{5,50}$&quot;))" jr:constraintMsg="Response length must be between 5 and 50"/>
+      <bind nodeset="/data/namaortu" type="string" required="true()" constraint="(regex(., &quot;^.{1,20}$&quot;))" jr:constraintMsg="Response length must be between 1 and 20"/>
+      <bind nodeset="/data/pekerjaanOrtu" type="string" required="true()" constraint="(regex(., &quot;^.{1,30}$&quot;))" jr:constraintMsg="Response length must be between 1 and 30"/>
+      <bind nodeset="/data/alamatOrtu" type="string" constraint="(regex(., &quot;^.{1,50}$&quot;))" jr:constraintMsg="Response length must be between 1 and 50"/>
+      <bind nodeset="/data/nrp" type="string" required="true()" constraint="(regex(., &quot;^.{10,10}$&quot;))" jr:constraintMsg="Response length must be between 10 and 10"/>
+      <bind nodeset="/data/masaStudi" type="int" constraint="(. &gt; '1' and . &lt; '14')" jr:constraintMsg="Value must be between 1 and 14"/>
+      <bind nodeset="/data/statusmhs" type="select1"/>
+      <bind nodeset="/data/tahap" type="select1"/>
+      <bind nodeset="/data/keperluan" type="string" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/nama">
+      <label ref="jr:itext('/data/nama:label')"/>
+      <hint ref="jr:itext('/data/nama:hint')"/>
+    </input>
+    <input ref="/data/ttl">
+      <label ref="jr:itext('/data/ttl:label')"/>
+      <hint ref="jr:itext('/data/ttl:hint')"/>
+    </input>
+    <input ref="/data/TanggalLahir">
+      <label ref="jr:itext('/data/TanggalLahir:label')"/>
+    </input>
+    <input ref="/data/nohp">
+      <label ref="jr:itext('/data/nohp:label')"/>
+      <hint ref="jr:itext('/data/nohp:hint')"/>
+    </input>
+    <input ref="/data/alamat">
+      <label ref="jr:itext('/data/alamat:label')"/>
+      <hint ref="jr:itext('/data/alamat:hint')"/>
+    </input>
+    <input ref="/data/namaortu">
+      <label ref="jr:itext('/data/namaortu:label')"/>
+    </input>
+    <input ref="/data/pekerjaanOrtu">
+      <label ref="jr:itext('/data/pekerjaanOrtu:label')"/>
+    </input>
+    <input ref="/data/alamatOrtu">
+      <label ref="jr:itext('/data/alamatOrtu:label')"/>
+    </input>
+    <input ref="/data/nrp">
+      <label ref="jr:itext('/data/nrp:label')"/>
+    </input>
+    <input ref="/data/masaStudi">
+      <label ref="jr:itext('/data/masaStudi:label')"/>
+    </input>
+    <select1 ref="/data/statusmhs">
+      <label ref="jr:itext('/data/statusmhs:label')"/>
+      <item>
+        <label ref="jr:itext('/data/statusmhs:option0')"/>
+        <value>aktif</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/statusmhs:option1')"/>
+        <value>cuti</value>
+      </item>
+    </select1>
+    <select1 ref="/data/tahap">
+      <label ref="jr:itext('/data/tahap:label')"/>
+      <item>
+        <label ref="jr:itext('/data/tahap:option0')"/>
+        <value>persiapan</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tahap:option1')"/>
+        <value>sarjana</value>
+      </item>
+    </select1>
+    <input ref="/data/keperluan">
+      <label ref="jr:itext('/data/keperluan:label')"/>
+    </input>
+  </h:body>
+</h:html>
