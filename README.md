@@ -12,7 +12,7 @@ pada [Opendatakit Aggregate](https://opendatakit.org/use/aggregate/)).
 6. Kemudian buka ODK Collect pada android anda seperti tampilan berikut ini
 ![alt-text](https://)
 7. Setelah mengisi pada ODK Collect, tekan Send Finalized Form seperti berikut ini ![alt-text](https://).
-8. Maka saat kita buka ODK Aggregate pada server, akan tampil data-data seperti berikut ini ![alt-text](https://)
+8. Maka saat kita buka ODK Aggregate pada server, akan tampil data-data seperti berikut ini ![alt-text](https://www.dropbox.com/s/pgubqcqhxp1jj5v/Screenshot%20-%20210316%20-%2015%3A52%3A11.png?dl=0)
 9. 
 #Developer :
 ##Arief Putranto (5213100124)
