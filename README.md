@@ -2,7 +2,7 @@
 Form ini dapat digunakan untuk membuat form surat keterangan bahwa 
 mahasiswa tersebut merupakan yang aktif di tempat kuliahnya.
 
-#Format Form
+#Urutan Pengisian Form
 1. Nama Mahasiswa
 2. Tempat Lahir Mahasiswa
 3. Tanggal Lahir Mahasiswa
@@ -16,6 +16,10 @@ mahasiswa tersebut merupakan yang aktif di tempat kuliahnya.
 11. Status Mahasiswa
 12. Tahap Mahasiswa
 13. Keperluan Mahasiswa
+
+#Formulir yang digunakan
+- [form.doc](https://github.com/ariefputranto/tost/blob/master/doc/form.doc?raw=true) : merupakan form dimana mahasiswa mengisikan data dirinya dan keperluannya.
+- [letter.doc](https://github.com/ariefputranto/tost/blob/master/doc/letter.docx?raw=true) : merupakan surat yang dibuat oleh pegawai TU setelah mahasiswa mengajukan form permintaan surat keterangan mahasiswa.
 
 #Cara Penggunaan
 1. Install OpenDataKit Aggregate (ikuti sesuai dengan petunjuk installasi
