@@ -26,7 +26,7 @@ mahasiswa tersebut merupakan yang aktif di tempat kuliahnya.
 1. Install OpenDataKit Aggregate (ikuti sesuai dengan petunjuk installasi
 pada [Opendatakit Aggregate](https://opendatakit.org/use/aggregate/)).
 2. Install Opendatakit Collect pada perangkat android anda (bisa didownload melalui playstore atau bisa didownload melalui website [Opendatakit Collect](https://opendatakit.org/use/collect/).
-3. Jalankan [tableMHS.sql](), [form_mhs.sql]() serta [TRIGGER_update_mhs]() pada MYSQL Server anda.
+3. Jalankan [tableMHS.sql](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/tableMHS.sql), [form_mhs.sql](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/form_mhs.sql) serta [TRIGGER_update_mhs](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/TRIGGER_update_mhs) pada MYSQL Server anda.
 3. Setelah menginstall kedua tools diatas serta menjalankan query MYSQL tersebut. sekarang download form surat keterangan mahasiswa pada link berikut ini [wth is the link???](https://opendatakit.org/use/collect/).
 4. Kemudian upload form tersebut pada ODK Aggregate.
 5. Setelah itu atur hak akses dari setiap user pada Site Admin --> Permissions.
@@ -38,13 +38,13 @@ pada [Opendatakit Aggregate](https://opendatakit.org/use/aggregate/)).
 10. Lalu masukkan Username dan password pada database anda.
 11. Kemudian klik next sebanyak 5 kali lalu klik tombol save starting document.
 12. Kemudian tekan Finish maka akan muncul tampilan seperti berikut ini 
-![Screenshot hasil](Screenshot - 110416 - 15:58:47.png)
+![Screenshot hasil](https://github.com/ariefputranto/tost/blob/master/form/Screenshot/Screenshot%20-%20110416%20-%2015:58:47.png)
 13. Apabila setelah mencetak dan ingin menghapusnya hapus saja melalui ODK Aggregate pada server seperti ini ![Screenshot ODK Aggregate](https://github.com/ariefputranto/tost/blob/master/form/Screenshot/Screenshot%20-%20210316%20-%2015_52_11.png?raw=true).
-14. Apabila ingin melihat informasi mahasiswa yang pernah mengajukan surat permohonan bisa dilihat melalui [formMhs.php]() berikut ini tampilan dari formMhs.php ![Screenshot formMhs.php](Screenshot - 110416 - 16:02:30.png)
+14. Apabila ingin melihat informasi mahasiswa yang pernah mengajukan surat permohonan bisa dilihat melalui [formMhs.php](https://github.com/ariefputranto/tost/blob/master/form/formMhs.php) berikut ini tampilan dari formMhs.php ![Screenshot formMhs.php](https://github.com/ariefputranto/tost/blob/master/form/Screenshot/Screenshot%20-%20110416%20-%2016:02:30.png)
 
 #Catatan
-- Dalam menggunakan formMhs.php diharapkan membuka file tersebut dan mengganti "localhost","root","123" dengan server yang akan digunakan, user dari database tersebut dan passwordnya.
-- Dalam menggunakan TRIGGER_update_mhs dan form_mhs.sql,  diharapkan mengganti `BUILD_FORMULIR_SURAT_KETERANGAN_MAHASISWA_1460283183_CORE`dengan tabel yang akan dibuat oleh ODK Aggregate pada server anda. Untuk melihatnya buka database MYSQL anda lalu cari yang terdapat BUILD_FORMULIR_SURAT_KETERANGAN_MAHASISWA biasanya yang berbeda hanyalah angka dibelakangnya itu.
+- Dalam menggunakan [formMhs.php](https://github.com/ariefputranto/tost/blob/master/form/formMhs.php) diharapkan membuka file tersebut dan mengganti "localhost","root","123" dengan server yang akan digunakan, user dari database tersebut dan passwordnya.
+- Dalam menggunakan [TRIGGER_update_mhs](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/TRIGGER_update_mhs) dan [form_mhs.sql](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/form_mhs.sql),  diharapkan mengganti `BUILD_FORMULIR_SURAT_KETERANGAN_MAHASISWA_1460283183_CORE`dengan tabel yang akan dibuat oleh ODK Aggregate pada server anda. Untuk melihatnya buka database MYSQL anda lalu cari yang terdapat BUILD_FORMULIR_SURAT_KETERANGAN_MAHASISWA biasanya yang berbeda hanyalah angka dibelakangnya itu.
 
 #Developer :
 Arief Putranto (5213100124)
