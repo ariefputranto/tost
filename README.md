@@ -27,7 +27,7 @@ mahasiswa tersebut merupakan yang aktif di tempat kuliahnya.
 pada [Opendatakit Aggregate](https://opendatakit.org/use/aggregate/)).
 2. Install Opendatakit Collect pada perangkat android anda (bisa didownload melalui playstore atau bisa didownload melalui website [Opendatakit Collect](https://opendatakit.org/use/collect/).
 3. Jalankan [tableMHS.sql](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/tableMHS.sql), [form_mhs.sql](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/form_mhs.sql) serta [TRIGGER_update_mhs](https://github.com/ariefputranto/tost/blob/master/form/mysql%20query/TRIGGER_update_mhs) pada MYSQL Server anda.
-3. Setelah menginstall kedua tools diatas serta menjalankan query MYSQL tersebut. sekarang download form surat keterangan mahasiswa pada link berikut ini [wth is the link???](https://opendatakit.org/use/collect/).
+3. Setelah menginstall kedua tools diatas serta menjalankan query MYSQL tersebut. sekarang download form surat keterangan mahasiswa pada link berikut ini [ODK Collect](https://opendatakit.org/use/collect/).
 4. Kemudian upload form tersebut pada ODK Aggregate.
 5. Setelah itu atur hak akses dari setiap user pada Site Admin --> Permissions.
 6. Kemudian buka ODK Collect pada android anda seperti tampilan berikut ini
