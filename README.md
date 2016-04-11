@@ -34,7 +34,7 @@ pada [Opendatakit Aggregate](https://opendatakit.org/use/aggregate/)).
 ![Screenshot ODK Collect](https://github.com/ariefputranto/tost/blob/master/form/Screenshot/Screenshot_2016-03-21-15-42-00.png?raw=true)
 7. Setelah mengisi pada ODK Collect, tekan Send Finalized Form seperti berikut ini ![Screenshot to finalize form](https://github.com/ariefputranto/tost/blob/master/form/Screenshot/Screenshot_2016-03-21-15-45-45.png?raw=true).
 8. Maka saat kita buka ODK Aggregate pada server, data yang telah difinalisasi pada ODK Collect akan tersimpan disana, seperti gambar berikut ini ![Screenshot ODK Aggregate](https://github.com/ariefputranto/tost/blob/master/form/Screenshot/Screenshot%20-%20210316%20-%2015_52_11.png?raw=true).
-9. Kemudian buka [letter.odt](https://github.com/ariefputranto/tost/blob/master/doc/letter.docx?raw=true) lalu klik Tools --> Mail Merge Wizard.
+9. Kemudian buka [letter.odt](https://github.com/ariefputranto/tost/blob/master/doc/letter.odt) lalu klik Tools --> Mail Merge Wizard.
 10. Lalu masukkan Username dan password pada database anda.
 11. Kemudian klik next sebanyak 5 kali lalu klik tombol save starting document.
 12. Kemudian tekan Finish maka akan muncul tampilan seperti berikut ini 
